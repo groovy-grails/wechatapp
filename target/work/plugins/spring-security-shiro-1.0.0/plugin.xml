@@ -1,0 +1,11 @@
+<plugin name='spring-security-shiro' version='1.0.0' grailsVersion='2.3 &gt; *'>
+  <author>Burt Beckwith</author>
+  <authorEmail>burt@burtbeckwith.com</authorEmail>
+  <title>Shiro support for the Spring Security plugin</title>
+  <description>Shiro support for the Spring Security plugin</description>
+  <documentation>http://grails-plugins.github.io/grails-spring-security-shiro/</documentation>
+  <type>SpringSecurityShiroGrailsPlugin</type>
+  <resources>
+    <resource>DefaultShiroSpringSecurityConfig</resource>
+  </resources>
+</plugin>
