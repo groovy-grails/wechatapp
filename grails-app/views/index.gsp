@@ -89,10 +89,10 @@
 			<div id="controller-list" role="navigation">
 				<h2>Available functions:</h2>
 				<ul>
-					<g:each var="c" in="${grailsApplication.controllerClasses.findAll { !(it.fullName in ['weichatapp.UploadController','asset.pipeline.AssetsController','grails.plugin.databasemigration.DbdocController','grails.plugin.springsecurity.LoginController','grails.plugin.springsecurity.LogoutController']) } }">
+					<g:each var="c" in="${grailsApplication.controllerClasses.findAll { !(it.fullName in ['weichatapp.ServiceController','weichatapp.UploadController','asset.pipeline.AssetsController','grails.plugin.databasemigration.DbdocController','grails.plugin.springsecurity.LoginController','grails.plugin.springsecurity.LogoutController']) } }">
 						<li class="controller"><g:link controller="${c.logicalPropertyName}"><g:message code="${c.name }.label"  /></g:link></li>
 					</g:each>
-					<li class="controller"><g:link controller="logout">Log Out</g:link></li>
+					<li class="controller"><g:link controller="logout">注销</g:link></li>
 				</ul>
 			</div>
 		</div>

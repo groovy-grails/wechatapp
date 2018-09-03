@@ -4,8 +4,8 @@ dataSource {
 //    driverClassName = "org.h2.Driver"
 //    username = "sa"
 //    password = ""
-	driverClassName = "com.mysql.jdbc.Driver"
-	username = "root"
+	driverClassName = "org.firebirdsql.jdbc.FBDriver"
+	username = "SYSDBA"
 	password = "a5r2t8"
 }
 hibernate {
@@ -28,7 +28,7 @@ environments {
 	development {
 		dataSource {
 			dbCreate = "update" // one of 'create', 'create-drop', 'update', 'validate', ''
-			url = "jdbc:mysql://localhost:3306/weichatapp?autoreconnect=true"
+			url = "jdbc:firebirdsql:embedded:/var/lib/firebird/data/weichatapp.fdb"
 		}
 	}
     test {
@@ -40,7 +40,7 @@ environments {
     production {
         dataSource {
             dbCreate = "update"
-            url = "jdbc:mysql://localhost:3306/weichatapp?autoreconnect=true"
+            url = "jdbc:firebirdsql:embedded:/var/lib/firebird/data/weichatapp.fdb"
             properties {
                // See http://grails.org/doc/latest/guide/conf.html#dataSource for documentation
                jmxEnabled = true

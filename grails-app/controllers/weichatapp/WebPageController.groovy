@@ -25,6 +25,7 @@ class WebPageController {
 
     @Transactional
     def save(WebPage webPageInstance) {
+		
         if (webPageInstance == null) {
             notFound()
             return
@@ -52,6 +53,7 @@ class WebPageController {
 
     @Transactional
     def update(WebPage webPageInstance) {
+		//println webPageInstance
         if (webPageInstance == null) {
             notFound()
             return

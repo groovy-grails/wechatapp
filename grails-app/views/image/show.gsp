@@ -27,7 +27,7 @@
 				<li class="fieldcontain">
 					<span id="name-label" class="property-label"><g:message code="image.name.label" default="Name" /></span>
 					
-						<span class="property-value" aria-labelledby="name-label"><img width="500" height="280" src="../../upload?filename=${imageInstance?.name}" /></span>
+						<span class="property-value" aria-labelledby="name-label"><img width="500" height="280" src="../upload?filename=${imageInstance?.name}" /></span>
 					
 				</li>
 				</g:if>
