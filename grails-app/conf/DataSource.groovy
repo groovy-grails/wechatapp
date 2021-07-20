@@ -6,7 +6,7 @@ dataSource {
 //    password = ""
 	driverClassName = "org.firebirdsql.jdbc.FBDriver"
 	username = "SYSDBA"
-	password = "a5r2t8"
+	password = "********"
 }
 hibernate {
     cache.use_second_level_cache = true
